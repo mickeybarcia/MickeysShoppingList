@@ -4,7 +4,7 @@
     "slug": "MickeysShoppingList",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon3.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -14,17 +14,45 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "scheme": "com.mickey.mickeysshoppinglist",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mickey.mickeysshoppinglist",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "useFrameworks": "static",
+      "associatedDomains": [
+        "applinks:shoppinglisttrackerapp.page.link"
+      ],
+      "entitlements": [
+        "com.apple.developer.associated-domains"
+      ]
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon3.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mickey.mickeysshoppinglist"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      "@react-native-firebase/crashlytics",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "5b075e0b-3cfc-4f08-848c-c367774133f8"
+      }
     }
   }
 }
