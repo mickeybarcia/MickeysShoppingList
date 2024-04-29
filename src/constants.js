@@ -1,4 +1,4 @@
-export const APP_TITLE = "mickey's shopping list 🛒";
+export const APP_TITLE = "mickey's shopping list";
 export const LIGHT_BLUE = '#5CB3EA';
 export const DARK_BLUE = '#1298ED';
 export const ICON_SIZE = 20;
